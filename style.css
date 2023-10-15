@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+#top{
+    width:100%;
+   min-height:60vh;
+    background-image: url(https://www.tapmi.edu.in/wp-content/uploads/2018/07/landing-page-background-810x442.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#bottom{
+    width:100%;
+    min-height:20vh;
+    background-color: blue;
+    display: flex;
+}
+#bone{
+    padding: 30px;
+    width: 25%;
+   min-height: inherit;
+    background-color:white ;
+    padding: 30px;
+
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#btwo{
+    width: 25%;
+    min-height:inherit;
+   background-image: url(https://www.goodfreephotos.com/albums/italy/other-italy/high-mountains-of-the-alps.jpg);
+   background-size: cover;
+
+}
+#bthree{
+    width: 20%;
+    height: 100%;
+    
+}
+#bthreetop{
+    width: 100%;
+    min-height:20vh;
+    background-color:orangered;
+    padding: 20px;
+    color: white;
+}
+#bthreetop p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+#bthreebottom{
+    width: 100%;
+   min-height: 20vh;
+    background-image: url(https://4.bp.blogspot.com/-UTUIu-83hG4/VIxaZddFjPI/AAAAAAAADcg/m6Eg5RM6P98/s1600/chaliyar.jpg);
+    background-size: cover;
+}
+#bfour{
+    width: 30%;
+    min-height: inherit;
+    background-color: #444;
+    color: #fff;
+    padding: 30px;
+}
+#overlap{
+    position: relative;
+
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(53, 48, 48, 0.374);
+}
+#text{
+    width: 100%;
+    padding: 0 10vw;
+   display: flex;
+    position: absolute;
+    bottom: 20%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+#textright{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+#textright p{
+    font-size: 12px;
+    width: 40%;
+}
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+#textright i{
+    color: white;
+}
+.notf{
+    display: flex;
+    margin-top:20px  ;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.notf p{
+    width: 86%;
+    font-size: 12px;
+}
+
+
+@media(max-width:500px)
+{
+    #overlap #text{
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #overlap #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlap #text #textright p{
+       width: initial;
+       margin-top:20px ;
+    }
+    #overlap #text #textright #icon{
+
+     margin-top: 30px;
+    }
+    #bottom {
+        flex-direction:column ;
+    }
+    #bone{
+        width: 100%;
+    }
+    #bthreebottom{
+        min-height: 40vh;
+    }
+    #btwo{
+        width: 100%;
+        min-height: 40vh;
+    }
+    #bthree{
+        width: 100%;
+        flex-direction: column;
+    }
+    #bfour{
+        width: 100%;
+    }
+    #bottom{
+        min-height: 20vh;
+    }
+}
